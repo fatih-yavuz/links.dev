@@ -1,7 +1,7 @@
 users = [
     {
         "name": "Fatih Yavuz",
-        "username": "fatihyavuz",
+        "username": "fatih",
         "description": "Software Engineer @Spotify",
         "image": "https://pbs.twimg.com/profile_images/1593630240961662979/hDHYl9MP_400x400.jpg"
     },

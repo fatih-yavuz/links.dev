@@ -10,11 +10,20 @@ Are you tired of having to constantly update your CV, social media profiles, and
 ## How to sign up
 To register for links.dev, you need to do two things:
 
-- Create a pull request to add yourself to the registry.yaml file.
+- Create a pull request to add yourself ([Example PR](https://github.com/fatih-yavuz/links.dev/pull/2))
+  1. To the registry.yaml file.
+  2. To the README.md file. 
+  3. To the early-adopters.js file (This will add you to the homepage of the site).
 - Create a new public repository called "my-links". (You can also fork [this](https://github.com/fatih-yavuz/my-links)) This repository should contain two files:
   1. page.json, which contains the content of your page. An example can be found [here](https://github.com/fatih-yavuz/my-links/blob/main/page.json)
   2. custom.css, which allows you to customize the look of your page. An example file can be found [here](https://github.com/fatih-yavuz/my-links/blob/main/custom.css).
 - Once you have created your "my-links" repository and opened your pull request, wait for it to be reviewed and approved. Once it is merged to the master branch, your page will be visible at: https://links.dev/username (If you are an early adopter, please update README.md's Early Adopters section to include your name in your PR)
+
+## Restrictions
+- Your username must be unique. If your username is already taken, you will be asked to choose a different one.
+- Your page cannot contain any offensive content.
+- Your page cannot contain any links to illegal content.
+- You cannot register reserved usernames. Here is a list of reserved usernames: [admin, api, blog, contact, dashboard, docs, faq, help, home, index, login, logout, mail, mailto, privacy, register, signup, support, terms, test, cdn, api-auth, themes]
 
 ## Early Adopters
 First 1000 users will get early adopters badge on their profile. Here is a list of early adopters who have already signed up and created their own pages:
@@ -31,6 +40,6 @@ Once you have your page set up, you can share the link with your friends and col
 
 ## Support My Work
 
-If you like this project and want to support my work, you can buy me a coffee by clicking the button below. Thank you for your support! I pay 200 EUR per year for this domain. Any support is appreciated!
+If you like this project and want to support my work, you can buy me a coffee by clicking the button below. Thank you for your support!
 
 [![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/fthdev)

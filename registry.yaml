@@ -1,3 +1,5 @@
 users:
   fatih: # this key is the claimed username for links.dev
     github_username: fatih-yavuz
+  birkan: 
+    github_username: birkanatici

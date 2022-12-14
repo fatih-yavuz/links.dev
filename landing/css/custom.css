@@ -1,3 +1,23 @@
+.w-dyn-item.visible {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slogan {
+    margin-top: 58px;
+    margin-bottom: 58px;
+    line-height: 2;
+    font-size: 18px;
+}
+
 
 .book-cover-image {
     border-radius: 100%;

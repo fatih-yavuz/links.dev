@@ -20,6 +20,7 @@ To register for links.dev, you need to do two things:
 First 1000 users will get early adopters badge on their profile. Here is a list of early adopters who have already signed up and created their own pages:
 
 - [Fatih Yavuz](https://links.dev/fatih)
+- [Sila Eryilmaz](https://links.dev/sila)
 
 ## Thanks
 Thank you for using my service! I hope you have a great time creating your own page and sharing it with others. Let me know if you have any questions or need any assistance along the way.

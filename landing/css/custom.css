@@ -1,0 +1,66 @@
+
+.book-cover-image {
+    border-radius: 100%;
+}
+
+.brandingLogo {
+    display: none !important;
+}
+
+
+#mc_embed_signup_scroll {
+    display: flex;
+    flex-direction: column;
+}
+
+#mc-embedded-subscribe {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 12px 30px 10px 30px !important;
+    min-height: 49px !important;
+    font-size: 16px !important;
+    min-width: 50px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    text-align: center;
+    cursor: pointer;
+}
+
+#mce-EMAIL {
+    padding: 12px 30px 10px 30px !important;
+    font-size: 17px !important;
+    border-style: solid !important;
+    display: inline !important;
+    font-style: normal !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: initial !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    color: #2F2F2F !important;
+    outline-color: transparent;
+    outline-style: none;
+    background: #FFF;
+    font-weight: 400 !important;
+    border: 1px solid #DBDBDB !important;
+    line-height: 1.5em !important;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    box-shadow: none !important;
+    height: initial !important;
+    position: initial !important;
+    overflow: initial !important;
+    margin: initial !important;
+    vertical-align: top !important;
+}
+
+.mce_inline_error {
+    display: none !important;
+}
+
+@media (max-width: 767px) {
+    .hidden-mobile {
+        display: none;
+    }
+}

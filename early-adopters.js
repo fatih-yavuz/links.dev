@@ -6,6 +6,12 @@ users = [
         "image": "https://pbs.twimg.com/profile_images/1593630240961662979/hDHYl9MP_400x400.jpg"
     },
     {
+        "name": "Sila Eryilmaz",
+        "username": "sila",
+        "description": "Software Engineer @Mollie",
+        "image": "https://pbs.twimg.com/profile_images/1564258152056602626/1yxj4TXo_400x400.jpg"
+    },
+    {
         "name": "Birkan Atıcı",
         "username": "birkan",
         "description": "Software Engineer",

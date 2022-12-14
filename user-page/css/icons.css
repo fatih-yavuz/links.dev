@@ -1,0 +1,74 @@
+.icon-twitter {
+    -webkit-mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/twitter.svg);
+    mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/twitter.svg);
+}
+
+.icon-instagram {
+    -webkit-mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/instagram.svg);
+    mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/instagram.svg);
+}
+
+.icon-github {
+    -webkit-mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/github.svg);
+    mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/github.svg);
+}
+
+.icon-linkedin {
+    -webkit-mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/linkedin.svg);
+    mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/linkedin.svg);
+}
+
+.icon-medium {
+    -webkit-mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/medium.svg);
+    mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/medium.svg);
+}
+
+.icon-mail {
+    -webkit-mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/mail.svg);
+    mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/mail.svg);
+}
+
+.icon-youtube {
+    -webkit-mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/youtube.svg);
+    mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/youtube.svg);
+}
+.icon-click {
+    -webkit-mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/click.svg);
+    mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/click.svg);
+}
+
+.icon-spotify {
+    -webkit-mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/spotify.svg);
+    mask-image: url(https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/spotify.svg);
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    pointer-events: none;
+    overflow: hidden;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: currentColor;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    left: 8px;
+    border-radius: 12px;
+    width: 48px;
+    height: 48px;
+}
+
+.hOaBSk {
+    width: 44px;
+    height: 44px;
+}
+

@@ -1,4 +1,4 @@
-# Simplify Your Online Presence with links.dev for Free
+# Simplify Your Online Presence
 Are you tired of having to constantly update your CV, social media profiles, and other online platforms with your latest links and information? With links.dev, you can simplify your online presence and make it easier for potential employers, clients, and followers to find and access all your important links in one place.
 
 ## Benefits

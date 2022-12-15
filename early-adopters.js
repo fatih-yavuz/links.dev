@@ -46,5 +46,5 @@ users = [
     description: "Offensive Security Engineer @Trendyol",
     image:
       "https://i.imgur.com/HCTwBSn.jpeg",
-  },
+  }
 ];

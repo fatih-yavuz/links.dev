@@ -33,4 +33,11 @@ users = [
     image:
       "https://pbs.twimg.com/profile_images/1603390110766178306/ewOd91S2_400x400.jpg",
   },
+  {
+    name: "Sezer İltekin",
+    username: "iltekin",
+    description: "iOS Developer",
+    image:
+      "https://pbs.twimg.com/profile_images/1587727782884347909/A-2MfwXM_400x400.jpg",
+  },
 ];

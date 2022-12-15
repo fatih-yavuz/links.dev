@@ -16,7 +16,7 @@ To register for links.dev, you need to do two things:
   3. To the early-adopters.js file (This will add you to the homepage of the site).
 - Create a new public repository called "my-links". (You can also fork [this](https://github.com/fatih-yavuz/my-links)) This repository should contain two files:
   1. page.json, which contains the content of your page. An example can be found [here](https://github.com/fatih-yavuz/my-links/blob/main/page.json)
-  2. [Optionl] custom.css, which allows you to customize the look of your page. An example file can be found [here](https://github.com/fatih-yavuz/my-links/blob/main/custom.css). If you don't add this file, your theme will be the default.
+  2. [Optional] custom.css, which allows you to customize the look of your page. An example file can be found [here](https://github.com/fatih-yavuz/my-links/blob/main/custom.css). If you don't add this file, your theme will be the default.
 - Once you have created your "my-links" repository and opened your pull request, wait for it to be reviewed and approved. Once it is merged to the master branch, your page will be visible at: https://links.dev/username (If you are an early adopter, please update README.md's Early Adopters section to include your name in your PR)
 
 ## Restrictions
@@ -31,6 +31,7 @@ First 1000 users will get early adopters badge on their profile. Here is a list 
 - [Fatih Yavuz](https://links.dev/fatih)
 - [Sila Eryilmaz](https://links.dev/sila)
 - [Birkan Atici](https://links.dev/birkan)
+- [Ali Yilmaz](https://links.dev/ali)
 
 ## Thanks
 Thank you for using my service! I hope you have a great time creating your own page and sharing it with others. Let me know if you have any questions or need any assistance along the way.

@@ -16,5 +16,11 @@ users = [
         "username": "birkan",
         "description": "Software Engineer",
         "image": "https://media-exp1.licdn.com/dms/image/C4D03AQE5ywsv2D-twg/profile-displayphoto-shrink_800_800/0/1622719386755?e=1674691200&v=beta&t=nGp54lHJJL8gw_38rJZY4ty6aNZD7DUSjdIjTKIv7oI"
+    },
+    {
+        "name": "Ali Yilmaz",
+        "username": "ali",
+        "description": "Software Engineer @Facebook",
+        "image": "https://i.ibb.co/YyF59Tx/Screenshot-2022-12-15-at-12-22-14.png"
     }
 ]

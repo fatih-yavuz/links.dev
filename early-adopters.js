@@ -21,6 +21,6 @@ users = [
         "name": "Ali Yilmaz",
         "username": "ali",
         "description": "Software Engineer @Facebook",
-        "image": "https://ibb.co/Sd4kT7z"
+        "image": "https://i.ibb.co/YyF59Tx/Screenshot-2022-12-15-at-12-22-14.png"
     }
 ]

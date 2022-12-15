@@ -39,6 +39,9 @@ First 1000 users will get early adopters badge on their profile. Here is a list 
 - [Ali Yilmaz](https://links.dev/ali)
 - [Ufuk Kodaman](https://links.dev/kodman)
 - [Sezer İltekin](https://links.dev/iltekin)
+- [Rıza Sabuncu](https://links.dev/riza)
+
+
 
 ## Thanks
 

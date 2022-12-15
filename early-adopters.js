@@ -40,4 +40,11 @@ users = [
     image:
       "https://pbs.twimg.com/profile_images/1587727782884347909/A-2MfwXM_400x400.jpg",
   },
+  {
+    name: "Rıza Sabuncu",
+    username: "riza",
+    description: "Offensive Security Engineer @Trendyol",
+    image:
+      "https://i.imgur.com/HCTwBSn.jpeg",
+  },
 ];

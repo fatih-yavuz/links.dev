@@ -14,6 +14,13 @@ users = [
       "https://pbs.twimg.com/profile_images/1564258152056602626/1yxj4TXo_400x400.jpg",
   },
   {
+    name: "Ali Goktas",
+    username: "a",
+    description: "Software Engineer",
+    image:
+      "https://media.licdn.com/dms/image/C5603AQHXU-scwq9ZvA/profile-displayphoto-shrink_400_400/0/1590850450625?e=1676505600&v=beta&t=UQ6Mq8rW-D6PHocre_s1Bw9LWHfGvIrkbdlnSJlnooc",
+  },
+  {
     name: "Birkan Atıcı",
     username: "birkan",
     description: "Software Engineer",

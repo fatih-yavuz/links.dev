@@ -18,23 +18,36 @@ async function validateRegistry() {
     if (!user.github_username) {
       throw new Error(`Invalid registry format. The user "${username}" is missing the "github_username" field.`);
     }
-    // Make a request to the user's page.json file
-    const pageJsonUrl = `https://raw.githubusercontent.com/${user.github_username}/my-links/main/page.json`;
-    console.log(pageJsonUrl);
-    const pageJsonResponse = await axios.get(pageJsonUrl);
+    try {
+      // Make a request to the user's page.json file
+      const pageJsonUrl = `https://raw.githubusercontent.com/${user.github_username}/my-links/main/page.json`;
+      console.log(pageJsonUrl);
+      const pageJsonResponse = await axios.get(pageJsonUrl);
 
-    if (pageJsonResponse.status !== 200) {
-      throw new Error(`Failed to fetch page.json for user "${username}". HTTP status code: ${pageJsonResponse.status}`);
-    }
-    const pageJsonContent = pageJsonResponse.data;
-    // Validate the structure of the page.json file
-    if (!pageJsonContent || !pageJsonContent.name || !pageJsonContent.description || !pageJsonContent.image_url || !pageJsonContent.links) {
-      throw new Error(`Invalid page.json format for user "${username}".`);
-    }
-    // Validate the image_url field
-    const imageUrlResponse = await axios.get(pageJsonContent.image_url, { responseType: 'arraybuffer' });
-    if (imageUrlResponse.status !== 200) {
-      throw new Error(`Invalid image_url for user "${username}". HTTP status code: ${imageUrlResponse.status}`);
+
+      if (pageJsonResponse.status !== 200) {
+        throw new Error(`Failed to fetch page.json for user "${username}". HTTP status code: ${pageJsonResponse.status}`);
+      }
+
+      const pageJsonContent = pageJsonResponse.data;
+      // Validate the structure of the page.json file
+      if (!pageJsonContent || !pageJsonContent.name || !pageJsonContent.description || !pageJsonContent.image_url || !pageJsonContent.links) {
+        throw new Error(`Invalid page.json format for user "${username}".`);
+      }
+
+      try {
+        // Validate the image_url field
+        const imageUrlResponse = await axios.get(pageJsonContent.image_url, { responseType: 'arraybuffer' });
+        if (imageUrlResponse.status !== 200) {
+          throw new Error(`Invalid image_url for user "${username}". HTTP status code: ${imageUrlResponse.status}`);
+        }
+
+      } catch (e) {
+        throw new Error(pageJsonContent.image_url + ' is failed');
+      }
+
+    } catch (e) {
+      throw new Error(pageJsonUrl + ' is failed');
     }
   }
   console.log('Registry validation successful.');

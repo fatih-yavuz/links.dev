@@ -32,39 +32,45 @@ async function validateEarlyAdopters() {
 
   // Verify that the content of the URL in the image field is an actual image
   for (const user of users) {
-    const response = await axios.get(user.image, {
-      responseType: 'arraybuffer'
-    });
+    try {
+      const response = await axios.get(user.image, {
+        responseType: 'arraybuffer'
+      });
 
-    // Check the content-type of the response to verify that it is an image
-    if (!response.headers['content-type'].startsWith('image/')) {
-      throw new Error(`The URL in the image field of user ${user.username} does not contain an image`);
+      // Check the content-type of the response to verify that it is an image
+      if (!response.headers['content-type'].startsWith('image/')) {
+        throw new Error(`The URL in the image field of user ${user.username} does not contain an image`);
+      }
+    } catch (e) {
+      throw new Error(user.image + ' is failed');
     }
-  }
 
-  // Read the registry.yaml file
-  const registryFileContent = fs.readFileSync('registry.yaml', 'utf8');
+    // Read the registry.yaml file
+    const registryFileContent = fs.readFileSync('registry.yaml', 'utf8');
 
-  // Parse the registry.yaml file
-  const registry = yaml.load(registryFileContent);
+    // Parse the registry.yaml file
+    const registry = yaml.load(registryFileContent);
 
-  // Validate that each user.username exists under users in the registry.yaml file
-  for (const user of users) {
-    if (!registry.users.hasOwnProperty(user.username)) {
-      throw new Error(`User ${user.username} does not exist in the registry`);
+    // Validate that each user.username exists under users in the registry.yaml file
+    for (const user of users) {
+      if (!registry.users.hasOwnProperty(user.username)) {
+        throw new Error(`User ${user.username} does not exist in the registry`);
+      }
     }
-  }
 
-  // Verify that each user exists only one time in the array
-  const uniqueUsernames = new Set(users.map(user => user.username));
-  if (uniqueUsernames.size !== users.length) {
-    throw new Error('There are duplicate users in the array');
+    // Verify that each user exists only one time in the array
+    const uniqueUsernames = new Set(users.map(user => user.username));
+    if (uniqueUsernames.size !== users.length) {
+      throw new Error('There are duplicate users in the array');
+    }
+
+    console.log(`The early-adopter ${user.name} is valid`);
   }
 }
 
-try {
-  validateEarlyAdopters();
-  console.log('The early-adopters.js file is valid');
-} catch (error) {
-  console.error(error.message);
+async function main() {
+  await validateEarlyAdopters();
 }
+
+main();
+

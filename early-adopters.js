@@ -62,6 +62,13 @@ users = [
       "https://pbs.twimg.com/profile_images/1479946935641509888/HNcrpB9L_400x400.jpg",
   },
   {
+    name: "Erhan Büte",
+    username: "erhan",
+    description: "CTO @moneytolia",
+    image:
+      "https://pbs.twimg.com/profile_images/1471460414911389702/NrQ94G88_400x400.jpg",
+  },
+  {
     name: "Onur Şuyalçınkaya",
     username: "onur",
     description: "Frontend Software Engineer @ heycar",

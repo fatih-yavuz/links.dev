@@ -84,7 +84,7 @@ users = [{
 	},
 	{
 		"name": "Furkan Kapukaya",
-		"username": "furkankapukayaa",
+		"username": "furkan",
 		"description": "Junior Software Developer at Piksel Mutfak",
 		"image": "https://furkankapukayaa.github.io/assets/img/me.jpeg"
         },

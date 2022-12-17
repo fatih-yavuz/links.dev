@@ -81,5 +81,11 @@ users = [{
 		"username": "codingwithdidem",
 		"description": "Frontend Developer @SpikyAI & Youtuber",
 		"image": "https://pbs.twimg.com/profile_images/1585152388851273728/VbwyNOR7_400x400.jpg"
+	},
+	{
+		"name": "Melih Sivri",
+		"username": "melih",
+		"description": "Backend Engineer @wopehq",
+		"image": "https://pbs.twimg.com/profile_images/1583952674587922433/0gUHF7fq_400x400.jpg"
 	}
 ];

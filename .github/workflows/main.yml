@@ -10,15 +10,6 @@ jobs:
       - name: Install dependencies
         run: |
           npm install eslint url-regex request js-yaml
-      - name: Validate early-adopters.js
-        run: |
-          # Parse the file and verify the structure of the users variable
-          node -e "const fs = require('fs'); const users = JSON.parse(fs.readFileSync('early-adopters.js')); if (!Array.isArray(users) || !users.every(user => user.name && user.username && user.description && user.image)) { throw new Error('Invalid users array'); }"
-          # Verify that the image field of each user object holds a valid URL
-          node -e "const fs = require('fs'); const users = JSON.parse(fs.readFileSync('early-adopters.js')); const urlRegex = require('url-regex'); if (!users.every(user => urlRegex({exact: true}).test(user.image))) { throw new Error('Invalid image URL'); }"
-          # Make a request to the image URL and verify that the content is an image file
-          node -e "const request = require('request'); const users = JSON.parse(fs.readFileSync('early-adopters.js')); users.forEach(user => { request(user.image, (error, response, body) => { if (error || !response || response.headers['content-type'].startsWith('image/')) {
-        if: success()
       - name: Validate registry.yaml
         run: |
           # Parse the registry.yaml file
@@ -30,4 +21,15 @@ jobs:
           # Verify that each user object appears only once in the users array
           const uniqueUsers = new Set(users);
           if (uniqueUsers.size !== users.length) { throw new Error('Duplicate users in array'); }
+        if: success()
+      - name: Validate early-adopters.js
+        run: |
+          # Lint the file
+          npx eslint early-adopters.js
+          # Parse the file and verify the structure of the users variable
+          node -e "const fs = require('fs'); const users = JSON.parse(fs.readFileSync('early-adopters.js')); if (!Array.isArray(users) || !users.every(user => user.name && user.username && user.description && user.image)) { throw new Error('Invalid users array'); }"
+          # Verify that the image field of each user object holds a valid URL
+          node -e "const fs = require('fs'); const users = JSON.parse(fs.readFileSync('early-adopters.js')); const urlRegex = require('url-regex'); if (!users.every(user => urlRegex({exact: true}).test(user.image))) { throw new Error('Invalid image URL'); }"
+          # Make a request to the image URL and verify that the content is an image file
+          node -e "const request = require('request'); const users = JSON.parse(fs.readFileSync('early-adopters.js')); users.forEach(user => { request(user.image, (error, response, body) => { if (error || !response || response.headers['content-type'].startsWith('image/')) {
         if: success()

@@ -1,5 +1,5 @@
 users:
-  fatih: # this key is the claimed username for links.dev
+  fatih:
     github_username: fatih-yavuz
   sila:
     github_username: SilaEryilmaz
@@ -14,7 +14,7 @@ users:
   riza:
     github_username: riza
   ahmet:
-    github_username: ahmetbcakici  
+    github_username: ahmetbcakici
   a:
     github_username: aligoktas96
   o:
@@ -23,10 +23,13 @@ users:
     github_username: erhan
   onur:
     github_username: suyalcinkaya
-    github_username: suyalcinkaya
   zeynep:
     github_username: zeynepnuraktas
   codingwithdidem:
     github_username: codingwithdidem
+  furkan:
+    github_username: furkankapukayaa
+  melih:
+    github_username: msrexe
   j:
     github_username: himbolion

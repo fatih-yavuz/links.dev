@@ -75,4 +75,6 @@ First 1000 users will get early adopters badge on their profile. Here is a list 
 - [Onur Şuyalçınkaya](https://links.dev/onur)
 - [Zeynep Nur Aktas](https://links.dev/zeynep)
 - [Didem Küçükkaraaslan](https://links.dev/codingwithdidem)
+- [Furkan Kapukaya](https://links.dev/furkan)
+- [Melih Sivri](https://links.dev/melih)
 - [Joshua](https://links.dev/j)

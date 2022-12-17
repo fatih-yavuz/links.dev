@@ -60,5 +60,12 @@ users = [
     description: "Software Developer @Trendyol",
     image:
       "https://pbs.twimg.com/profile_images/1479946935641509888/HNcrpB9L_400x400.jpg",
+  },
+  {
+    name: "Oğuz Albayrak",
+    username: "o",
+    description: "Software Developer @Booking",
+    image:
+      "https://pbs.twimg.com/profile_images/1333437534353887232/6zSAlQ14_400x400.jpg",
   }
 ];

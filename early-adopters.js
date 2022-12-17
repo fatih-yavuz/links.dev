@@ -86,6 +86,6 @@ users = [{
 		"name": "Joshua",
 		"username": "j",
 		"description": "Software Engineer & Graphic Designer",
-		"image": "https://s3.eu-central-1.wasabisys.com/media.joshua.cafe/E1cdVN-XsAM5wT7.jpg"
+		"image": "https://go.joshua.cafe/avatar"
 	}
 ];

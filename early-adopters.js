@@ -93,5 +93,11 @@ users = [
     username: "codingwithdidem",
     description: "Frontend Developer @SpikyAI & Youtuber",
     image: "https://pbs.twimg.com/profile_images/1585152388851273728/VbwyNOR7_400x400.jpg"
+  },
+  {
+    name: "Tolga Gezginiş",
+    username: "t",
+    description: "Engineering Director @SIMPRA",
+    image: "https://pbs.twimg.com/profile_images/1601669168339849217/AeIMm2IY_400x400.jpg"
   }
 ];

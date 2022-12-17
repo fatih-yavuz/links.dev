@@ -1,0 +1,24 @@
+# This workflow will be triggered every time a pull request is opened
+# on your repository
+on:
+  pull_request:
+
+# Define the jobs that should be run as part of this workflow
+jobs:
+  # Define a job named "validate"
+  validate:
+    # Run this job on Ubuntu-latest
+    runs-on: ubuntu-latest
+    # Define the steps that should be run as part of this job
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      # Install yamllint
+      - name: Install yamllint
+        run: |
+          pip install yamllint
+      # Validate the registry.yaml file using yamllint
+      - name: Validate registry.yaml
+        run: |
+          yamllint registry.yaml

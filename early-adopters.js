@@ -67,5 +67,12 @@ users = [
     description: "Software Developer @Booking",
     image:
       "https://pbs.twimg.com/profile_images/1333437534353887232/6zSAlQ14_400x400.jpg",
+  },
+  {
+    name: "Onur Şuyalçınkaya",
+    username: "onur",
+    description: "Frontend Software Engineer @ heycar",
+    image:
+      "https://pbs.twimg.com/profile_images/1601239587719979011/E-kvncKx_400x400.jpg",
   }
 ];

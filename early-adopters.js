@@ -81,5 +81,11 @@ users = [{
 		"username": "codingwithdidem",
 		"description": "Frontend Developer @SpikyAI & Youtuber",
 		"image": "https://pbs.twimg.com/profile_images/1585152388851273728/VbwyNOR7_400x400.jpg"
+	},
+	{
+		"name": "Joshua",
+		"username": "j",
+		"description": "Software Engineer & Graphic Designer",
+		"image": "https://s3.eu-central-1.wasabisys.com/media.joshua.cafe/E1cdVN-XsAM5wT7.jpg"
 	}
 ];

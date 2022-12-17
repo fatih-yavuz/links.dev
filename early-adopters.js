@@ -68,6 +68,7 @@ users = [
     image:
       "https://pbs.twimg.com/profile_images/1333437534353887232/6zSAlQ14_400x400.jpg",
   },
+  {
     name: "Erhan Büte",
     username: "erhan",
     description: "CTO @moneytolia",

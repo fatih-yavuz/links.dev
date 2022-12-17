@@ -1,4 +1,4 @@
-var users = [{
+users = [{
 		"name": "Fatih Yavuz",
 		"username": "fatih",
 		"description": "Software Engineer @Spotify",

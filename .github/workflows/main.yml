@@ -12,8 +12,6 @@ jobs:
           npm install eslint url-regex request js-yaml
       - name: Validate early-adopters.js
         run: |
-          # Lint the file
-          npx eslint early-adopters.js
           # Parse the file and verify the structure of the users variable
           node -e "const fs = require('fs'); const users = JSON.parse(fs.readFileSync('early-adopters.js')); if (!Array.isArray(users) || !users.every(user => user.name && user.username && user.description && user.image)) { throw new Error('Invalid users array'); }"
           # Verify that the image field of each user object holds a valid URL

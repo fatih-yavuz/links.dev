@@ -69,6 +69,12 @@ users = [
       "https://pbs.twimg.com/profile_images/1601239587719979011/E-kvncKx_400x400.jpg",
   },
   {
+    name: "Zeynep Nur Aktas",
+    username: "zeynep",
+    description: "Software Engineer",
+    image: "https://pbs.twimg.com/profile_images/1581993593018908672/VZ5-XkAe_400x400.jpg"
+  },
+  {
     name: "Didem Küçükkaraaslan",
     username: "codingwithdidem",
     description: "Frontend Developer @SpikyAI & Youtuber",

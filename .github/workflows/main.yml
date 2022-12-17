@@ -1,35 +1,14 @@
 on:
   pull_request:
+    branches:
+      - main
 
 jobs:
-  validate:
+  validate_registry:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Install dependencies
-        run: |
-          npm install eslint url-regex request js-yaml
-      - name: Validate registry.yaml
-        run: |
-          # Parse the registry.yaml file
-          const yaml = require('js-yaml');
-          const registry = yaml.safeLoad(fs.readFileSync('registry.yaml'));
-          # Verify that each user's username exists under the users section
-          const users = JSON.parse(fs.readFileSync('early-adopters.js'));
-          if (!users.every(user => registry.users[user.username])) { throw new Error('Invalid username in registry'); }
-          # Verify that each user object appears only once in the users array
-          const uniqueUsers = new Set(users);
-          if (uniqueUsers.size !== users.length) { throw new Error('Duplicate users in array'); }
-        if: success()
-      - name: Validate early-adopters.js
-        run: |
-          # Lint the file
-          npx eslint early-adopters.js
-          # Parse the file and verify the structure of the users variable
-          node -e "const fs = require('fs'); const users = JSON.parse(fs.readFileSync('early-adopters.js')); if (!Array.isArray(users) || !users.every(user => user.name && user.username && user.description && user.image)) { throw new Error('Invalid users array'); }"
-          # Verify that the image field of each user object holds a valid URL
-          node -e "const fs = require('fs'); const users = JSON.parse(fs.readFileSync('early-adopters.js')); const urlRegex = require('url-regex'); if (!users.every(user => urlRegex({exact: true}).test(user.image))) { throw new Error('Invalid image URL'); }"
-          # Make a request to the image URL and verify that the content is an image file
-          node -e "const request = require('request'); const users = JSON.parse(fs.readFileSync('early-adopters.js')); users.forEach(user => { request(user.image, (error, response, body) => { if (error || !response || response.headers['content-type'].startsWith('image/')) {
-        if: success()
+        run: npm install
+      - name: Validate registry
+        run: node ci/check-registry.js

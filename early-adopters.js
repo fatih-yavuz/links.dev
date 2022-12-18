@@ -105,5 +105,11 @@ users = [{
     "username": "j",
     "description": "Software Engineer & Graphic Designer",
     "image": "https://go.joshua.cafe/avatar"
-  }
+  },
+	{
+		"name": "Sadık Bahadır Memiş",
+		"username": "bahadir",
+		"description": "Software Developer",
+		"image": "https://pbs.twimg.com/profile_images/1478510227804897285/uhZHMXpa_400x400.jpg"
+	}
 ];

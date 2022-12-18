@@ -105,5 +105,11 @@ users = [{
     "username": "j",
     "description": "Software Engineer & Graphic Designer",
     "image": "https://go.joshua.cafe/avatar"
+  },
+  {
+	"name": "Mustafa KAKAÇ",
+    "username": "mustafakakac",
+    "description": "Senior Software Developer & Team Lead",
+    "image": "https://pbs.twimg.com/profile_images/1603324447464820736/WGvcrwGY_400x400.jpg"
   }
 ];

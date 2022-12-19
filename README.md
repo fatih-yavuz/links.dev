@@ -83,5 +83,6 @@ Here is a list of first 21 early adopters:
 - [Melih Sivri](https://links.dev/melih)
 - [Joshua](https://links.dev/j)
 - [Alperen Çetin](https://links.dev/alperen)
+- [Can Çitoğlu](https://links.dev/can)
 - [Yunus Bulut](https://links.dev/yunusbulut)
 - [Ömer Ulusal](https://links.dev/omer)

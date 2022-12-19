@@ -106,6 +106,12 @@ users = [{
     "description": "Software Engineer & Graphic Designer",
     "image": "https://go.joshua.cafe/avatar"
   },
+  {
+    "name": "Can Çitoğlu",
+    "username": "can",
+    "description": "Software Engineer @Twilio",
+    "image": "https://pbs.twimg.com/profile_images/968946458937446400/gPLrzD91_400x400.jpg"
+  },
 	{
     "name": "Yunus Bulut",
     "username": "yunusbulut",

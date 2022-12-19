@@ -44,7 +44,7 @@ users = [{
         "name": "Rıza Sabuncu",
         "username": "riza",
         "description": "Offensive Security Engineer @Trendyol",
-        "image": "https://i.imgur.com/HCTwBSn.jpeg"
+        "image": "https://avatars.githubusercontent.com/u/2565849?v=4"
     },
     {
         "name": "Ahmet Buğra Çakıcı",
@@ -86,7 +86,7 @@ users = [{
         "name": "Tolga Gezginiş",
         "username": "t",
         "description": "Engineering Director @SIMPRA",
-        image: "https://pbs.twimg.com/profile_images/1601669168339849217/AeIMm2IY_400x400.jpg"
+        "image": "https://pbs.twimg.com/profile_images/1601669168339849217/AeIMm2IY_400x400.jpg"
     },
     {
         "name": "Melih Sivri",

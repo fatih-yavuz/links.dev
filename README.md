@@ -15,14 +15,15 @@ Are you tired of having to constantly update your CV, social media profiles, and
 
 To register for links.dev, you need to do two things:
 
-- Create a pull request to add yourself ([Example PR](https://github.com/fatih-yavuz/links.dev/pull/2))
-  1. To the registry.yaml file.
-  2. To the README.md file.
-  3. To the early-adopters.js file (This will add you to the homepage of the site).
-- Create a new public repository called "my-links". (You can also fork [this](https://github.com/fatih-yavuz/my-links)) This repository should contain two files:
-  1. page.json, which contains the content of your page. An example can be found [here](https://github.com/fatih-yavuz/my-links/blob/main/page.json)
-  2. [Optional] custom.css, which allows you to customize the look of your page. An example file can be found [here](https://github.com/fatih-yavuz/my-links/blob/main/custom.css). If you don't add this file, your theme will be the default.
-- Once you have created your "my-links" repository and opened your pull request, wait for it to be reviewed and approved. Once it is merged to the master branch, your page will be visible at: https://links.dev/username (If you are an early adopter, please update README.md's Early Adopters section to include your name in your PR)
+- Create **a pull request** to add yourself to the registry.yaml file.
+- Create **a new public repository** called "my-links". (You can also fork [this](https://github.com/fatih-yavuz/my-links)) This repository should contain two files:
+  1. page.json, which contains the content of your page.
+  2. [Optional] custom.css, which allows you to customize the look of your page.
+
+That's it!
+
+### What's next?
+Once you have created your "my-links" repository and opened your pull request, wait for it to be reviewed and approved. Once it is merged to the master branch, your page will be visible at: https://links.dev/username (If you are an early adopter, please update README.md's Early Adopters section to include your name in your PR)
 
 ### Profile Picture Tips
 - Use and image url which has 1:1 aspect ratio for your profile picture. This will make sure that your profile picture is displayed correctly.
@@ -59,7 +60,9 @@ If you like this project and want to support my work, you can do so by starring 
 
 ## Early Adopters
 
-First 1000 users will get early adopters badge on their profile. Here is a list of early adopters who have already signed up and created their own pages:
+First 1000 users will get early adopters badge on their profile. 
+
+Here is a list of first 21 early adopters:
 
 - [Fatih Yavuz](https://links.dev/fatih)
 - [Sila Eryilmaz](https://links.dev/sila)
@@ -80,4 +83,5 @@ First 1000 users will get early adopters badge on their profile. Here is a list 
 - [Melih Sivri](https://links.dev/melih)
 - [Joshua](https://links.dev/j)
 - [Alperen Çetin](https://links.dev/alperen)
+- [Yunus Bulut](https://links.dev/yunusbulut)
 - [Ömer Ulusal](https://links.dev/omer)

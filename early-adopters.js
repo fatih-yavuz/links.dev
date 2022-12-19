@@ -106,11 +106,22 @@ users = [{
     "description": "Software Engineer & Graphic Designer",
     "image": "https://go.joshua.cafe/avatar"
   },
-{
+	{
+    "name": "Yunus Bulut",
+    "username": "yunusbulut",
+    "description": "Software Developer @SIMPRA",
+    "image": "https://pbs.twimg.com/profile_images/1602067236499456000/8lhZqNDl_400x400.jpg"
+  },
+  {
+    "name": "Ömer Ulusal",
+    "username": "ulusalomer",
+  	"description": "Unemployed",
+		"image": "https://pbs.twimg.com/profile_images/1065732965773144064/S37yanGM_400x400.jpg"
+}
+,{
     "name": "Yusuf Onder",
     "username": "yusuf",
     "description": "Android Developer",
     "image": "https://pbs.twimg.com/profile_images/1600213455654555667/Lq6_LAI1_400x400.jpg"
   }
-
 ];

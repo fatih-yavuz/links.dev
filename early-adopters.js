@@ -105,5 +105,12 @@ users = [{
     "username": "j",
     "description": "Software Engineer & Graphic Designer",
     "image": "https://go.joshua.cafe/avatar"
+  },
+{
+    "name": "Yusuf Onder",
+    "username": "yusuf",
+    "description": "Android Developer",
+    "image": "https://pbs.twimg.com/profile_images/1600213455654555667/Lq6_LAI1_400x400.jpg"
   }
+
 ];

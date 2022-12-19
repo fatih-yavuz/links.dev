@@ -102,4 +102,4 @@ users = [{
     }
 ];
 
-users = [...users].sort(() => 0.5 - Math.random()).slice(0, 6);
+users = [...users].sort(() => 0.5 - Math.random()).slice(0, 3);

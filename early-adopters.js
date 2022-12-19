@@ -1,5 +1,4 @@
-users = [
-    {
+users = [{
         "name": "Fatih Yavuz",
         "username": "fatih",
         "description": "Software Engineer @Spotify",
@@ -84,10 +83,10 @@ users = [
         "image": "https://pbs.twimg.com/profile_images/1585152388851273728/VbwyNOR7_400x400.jpg"
     },
     {
-        "name": "Tolga Gezginiş",
-        "username": "t",
-        "description": "Engineering Director @SIMPRA",
-        "image": "https://pbs.twimg.com/profile_images/1601669168339849217/AeIMm2IY_400x400.jpg"
+        name: "Tolga Gezginiş",
+        username: "t",
+        description: "Engineering Director @SIMPRA",
+        image: "https://pbs.twimg.com/profile_images/1601669168339849217/AeIMm2IY_400x400.jpg"
     },
     {
         "name": "Furkan Kapukaya",
@@ -106,6 +105,12 @@ users = [
         "username": "j",
         "description": "Software Engineer & Graphic Designer",
         "image": "https://go.joshua.cafe/avatar"
+    },
+    {
+        "name": "Yunus Bulut",
+        "username": "yunusbulut",
+        "description": "Software Developer @SIMPRA",
+        "image": "https://pbs.twimg.com/profile_images/1602067236499456000/8lhZqNDl_400x400.jpg"
     },
     {
         "name": "Omer Celik",

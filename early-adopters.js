@@ -107,9 +107,14 @@ users = [{
     "image": "https://go.joshua.cafe/avatar"
   },
   {
-	"name": "Mustafa KAKAÇ",
+	"name": "Mustafa Kakaç",
     "username": "mustafakakac",
     "description": "Senior Software Developer & Team Lead",
     "image": "https://pbs.twimg.com/profile_images/1603324447464820736/WGvcrwGY_400x400.jpg"
+	{
+    "name": "Yunus Bulut",
+    "username": "yunusbulut",
+    "description": "Software Developer @SIMPRA",
+    "image": "https://pbs.twimg.com/profile_images/1602067236499456000/8lhZqNDl_400x400.jpg"
   }
 ];

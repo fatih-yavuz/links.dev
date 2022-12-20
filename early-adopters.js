@@ -89,12 +89,6 @@ users = [{
         "image": "https://pbs.twimg.com/profile_images/1601669168339849217/AeIMm2IY_400x400.jpg"
     },
     {
-        "name": "Melih Sivri",
-        "username": "melih",
-        "description": "Backend Engineer @wopehq",
-        "image": "https://pbs.twimg.com/profile_images/1604966811069448192/KLE-8f2X_400x400.jpg"
-    },
-    {
         "name": "Ömer Ulusal",
         "username": "ulusalomer",
         "description": "Unemployed",

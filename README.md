@@ -1,4 +1,4 @@
-# Simplify Your Online Presence
+# Simplify your online presence with one simple link.
 
 Are you tired of having to constantly update your CV, social media profiles, and other online platforms with your latest links and information? With links.dev, you can simplify your online presence and make it easier for potential employers, clients, and followers to find and access all your important links in one place.
 
@@ -23,7 +23,7 @@ To register for links.dev, you need to do two things:
 That's it!
 
 ### What's next?
-Once you have created your "my-links" repository and opened your pull request, wait for it to be reviewed and approved. Once it is merged to the master branch, your page will be visible at: https://links.dev/username (If you are an early adopter, please update README.md's Early Adopters section to include your name in your PR)
+Once you have created your "my-links" repository and opened your pull request, wait for it to be reviewed and approved. Once it is merged to the master branch, your page will be visible at: https://links.dev/username
 
 ### Profile Picture Tips
 - Use and image url which has 1:1 aspect ratio for your profile picture. This will make sure that your profile picture is displayed correctly.
@@ -62,13 +62,13 @@ If you like this project and want to support my work, you can do so by starring 
 
 First 1000 users will get early adopters badge on their profile. 
 
-Here is a list of first 21 early adopters:
+Here is a list of first 22 early adopters:
 
 - [Fatih Yavuz](https://links.dev/fatih)
-- [Sila Eryilmaz](https://links.dev/sila)
-- [Ali Goktas](https://links.dev/a)
-- [Birkan Atici](https://links.dev/birkan)
-- [Ali Yilmaz](https://links.dev/ali)
+- [Sila Eryılmaz](https://links.dev/sila)
+- [Ali Göktaş](https://links.dev/a)
+- [Birkan Atıcı](https://links.dev/birkan)
+- [Ali Yılmaz](https://links.dev/ali)
 - [Ufuk Kodaman](https://links.dev/kodman)
 - [Sezer İltekin](https://links.dev/iltekin)
 - [Rıza Sabuncu](https://links.dev/riza)
@@ -84,4 +84,12 @@ Here is a list of first 21 early adopters:
 - [Joshua](https://links.dev/j)
 - [Alperen Çetin](https://links.dev/alperen)
 - [Mustafa Kakaç](https://links.dev/mustafakakac)
+- [Can Çitoğlu](https://links.dev/can)
 - [Yunus Bulut](https://links.dev/yunusbulut)
+- [Ömer Ulusal](https://links.dev/omer)
+
+## Frequently Asked Questions
+#### Can I add myself to Early Adopters in README.md? 
+Not anymore. Because its content is displayed on the home page, and it is susceptible to XSS. Thanks to @riza for reporting that. 
+#### Can I add myself to early-adopters.js? 
+Not anymore. Because it causes unnecessary merge conflicts.

@@ -23,7 +23,7 @@ To register for links.dev, you need to do two things:
 That's it!
 
 ### What's next?
-Once you have created your "my-links" repository and opened your pull request, wait for it to be reviewed and approved. Once it is merged to the master branch, your page will be visible at: https://links.dev/username (If you are an early adopter, please update README.md's Early Adopters section to include your name in your PR)
+Once you have created your "my-links" repository and opened your pull request, wait for it to be reviewed and approved. Once it is merged to the master branch, your page will be visible at: https://links.dev/username
 
 ### Profile Picture Tips
 - Use and image url which has 1:1 aspect ratio for your profile picture. This will make sure that your profile picture is displayed correctly.

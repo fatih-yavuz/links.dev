@@ -38,7 +38,7 @@ users = [{
         "name": "Sezer İltekin",
         "username": "iltekin",
         "description": "iOS Developer",
-        "image": "https://pbs.twimg.com/profile_images/1587727782884347909/A-2MfwXM_400x400.jpg"
+        "image": "https://pbs.twimg.com/profile_images/1604364419743584257/-DAiAIUk_400x400.jpg"
     },
     {
         "name": "Rıza Sabuncu",
@@ -92,7 +92,7 @@ users = [{
         "name": "Melih Sivri",
         "username": "melih",
         "description": "Backend Engineer @wopehq",
-        "image": "https://pbs.twimg.com/profile_images/1583952674587922433/0gUHF7fq_400x400.jpg"
+        "image": "https://pbs.twimg.com/profile_images/1604966811069448192/KLE-8f2X_400x400.jpg"
     },
     {
         "name": "Ömer Ulusal",

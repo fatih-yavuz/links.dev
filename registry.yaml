@@ -43,3 +43,5 @@ users:
     github_username: ulusalomer
   can:
     github_username: cancit
+  yigit:
+    github_username: YigitCiray

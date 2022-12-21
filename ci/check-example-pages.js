@@ -3,8 +3,8 @@ const yaml = require('js-yaml');
 const axios = require('axios');
 
 async function validateEarlyAdopters() {
-  // Read the early-adopters.js file
-  const earlyAdoptersFileContent = fs.readFileSync('early-adopters.js', 'utf8');
+  // Read the example-pages.js file
+  const earlyAdoptersFileContent = fs.readFileSync('example-pages.js', 'utf8');
 
   // Evaluate the file content to get the users array
   eval(earlyAdoptersFileContent);
@@ -64,7 +64,7 @@ async function validateEarlyAdopters() {
       throw new Error('There are duplicate users in the array');
     }
 
-    console.log(`The early-adopter ${user.name} is valid`);
+    console.log(`The example-page ${user.name} is valid`);
   }
 }
 

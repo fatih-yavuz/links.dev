@@ -13,4 +13,4 @@ jobs:
       - name: Validate Registry
         run: node ci/check-registry.js
       - name: Validate Early Adopters
-        run: node ci/check-early-adopters.js
+        run: node ci/check-example-pages.js

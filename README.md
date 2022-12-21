@@ -88,7 +88,13 @@ Here is a list of first 22 early adopters:
 - [Ömer Ulusal](https://links.dev/omer)
 
 ## Frequently Asked Questions
+#### I've updated my-links but I don't see the update on my page
+You need to clear the cache with hitting your page refresh=1 query param. 
+Example: https://links.dev/fatih?refresh=1
+If you still don't see the update, it might be because you recently committed the changes to your repo. It takes a bit time for GitHub to invalidate raw content caches. Try hitting your page with refresh=1 5 minutes later. 
+ 
 #### Can I add myself to Early Adopters in README.md? 
-Not anymore. Because its content is displayed on the home page, and it is susceptible to XSS. Thanks to @riza for reporting that. 
-#### Can I add myself to early-adopters.js? 
 Not anymore. Because it causes unnecessary merge conflicts.
+
+#### Can I add myself to early-adopters.js? 
+Not anymore. Because its content is displayed on the home page, and it is susceptible to XSS. Thanks to @riza for reporting that. 

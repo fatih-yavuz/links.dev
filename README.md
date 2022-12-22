@@ -67,7 +67,7 @@ If you like this project and want to support my work, you can do so by starring 
 
 First 1000 users will get early adopters badge on their profile. 
 
-Here is a list of first 22 early adopters:
+Here is a list of first 23 early adopters:
 
 - [Fatih Yavuz](https://links.dev/fatih)
 - [Sila Eryılmaz](https://links.dev/sila)
@@ -91,6 +91,7 @@ Here is a list of first 22 early adopters:
 - [Can Çitoğlu](https://links.dev/can)
 - [Yunus Bulut](https://links.dev/yunusbulut)
 - [Ömer Ulusal](https://links.dev/omer)
+- [Mehmet Akif Tütüncü](https://links.dev/akif)
 
 ## Frequently Asked Questions
 #### I've updated my-links, but I don't see the update on my page

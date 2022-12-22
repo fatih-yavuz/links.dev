@@ -86,6 +86,7 @@ Here is a list of first 22 early adopters:
 - [Can Çitoğlu](https://links.dev/can)
 - [Yunus Bulut](https://links.dev/yunusbulut)
 - [Ömer Ulusal](https://links.dev/omer)
+- [Mehmet Akif Tütüncü](https://links.dev/akif)
 
 ## Frequently Asked Questions
 #### I've updated my-links, but I don't see the update on my page

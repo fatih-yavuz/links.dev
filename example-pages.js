@@ -83,6 +83,12 @@ users = [{
         "image": "https://pbs.twimg.com/profile_images/1585152388851273728/VbwyNOR7_400x400.jpg"
     },
     {
+        "name": "Furkan Kapukaya",
+        "username": "furkan",
+        "description": "Junior Software Developer",
+        "image": "https://pbs.twimg.com/profile_images/1604495746652377091/rA5u_mmC_400x400.jpg",
+    },
+    {
         "name": "Tolga Gezginiş",
         "username": "t",
         "description": "Engineering Director @SIMPRA",

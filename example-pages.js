@@ -86,7 +86,7 @@ users = [{
         "name": "Furkan Kapukaya",
         "username": "furkan",
         "description": "Junior Software Developer",
-        "image": "https://furkankapukayaa.github.io/assets/img/me.jpeg",
+        "image": "https://pbs.twimg.com/profile_images/1604495746652377091/rA5u_mmC_400x400.jpg",
     },
     {
         "name": "Tolga Gezginiş",

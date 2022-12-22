@@ -15,7 +15,7 @@ Are you tired of having to constantly update your CV, social media profiles, and
 
 To register for links.dev, you need to do two things:
 
-- Create **a pull request** to add yourself to the registry.yaml file.
+- Create **a pull request** to add yourself to the registry.yaml file. 
 - Create **a new public repository** called "my-links". (You can also fork [this](https://github.com/fatih-yavuz/my-links)) This repository should contain two files:
   1. page.json, which contains the content of your page.
   2. [Optional] custom.css, which allows you to customize the look of your page.
@@ -24,6 +24,14 @@ That's it!
 
 ### What's next?
 Once you have created your "my-links" repository and opened your pull request, wait for it to be reviewed and approved. Once it is merged to the master branch, your page will be visible at: https://links.dev/username
+
+## Stay in touch?
+- Subscribe to the [newsletter](http://eepurl.com/igpQ6j), get notified when new features are added to links.dev
+- Follow [@links4dev](https://twitter.com/linksdev) on Twitter for updates
+- Join the [Discord](https://discord.gg/gVJPDQq4) server to get help and share your ideas
+- Want to support me for me? You can buy me a coffee [here](https://www.buymeacoffee.com/fthdev), I will publicly thank you on Twitter from [my personal account](https://twitter.com/fthdev) :)
+
+## Tips
 
 ### Profile Picture Tips
 - Use and image url which has 1:1 aspect ratio for your profile picture. This will make sure that your profile picture is displayed correctly.
@@ -34,10 +42,7 @@ Once you have created your "my-links" repository and opened your pull request, w
 - You can use any of the icons listed [here](https://github.com/fatih-yavuz/links.dev/tree/main/user-page/icons)
 - If you are a designer, feel free to create a pull request to add more icons to the list.
 
-## Nice to haves
-- Add a link to your page in your social media bios
-- Add your page to your CV
-- Add your page to your email signature
+
 
 ## Restrictions
 

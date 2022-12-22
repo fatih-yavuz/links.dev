@@ -6,6 +6,9 @@ urls=(
   "https://links.dev/fatih/?refresh-registry=1"
   "https://links.dev/fatih/?refresh=1"
   "https://links.dev/?refresh=1"
+  "https://links.dev/cdn?path=fatih-yavuz/links.dev/main/user-page/css/icons.css?reset=1"
+  "https://links.dev/cdn?path=fatih-yavuz/links.dev/main/user-page/css/base.css?reset=1"
+  "https://links.dev/cdn?path=fatih-yavuz/links.dev/main/user-page/css/reset.css?reset=1"
 )
 
 for url in "${urls[@]}"; do

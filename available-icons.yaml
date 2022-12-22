@@ -1,5 +1,5 @@
 icons:
-  - book.svg
+  - book
   - circle
   - diamond
   - file-text
@@ -14,7 +14,8 @@ icons:
   - spotify
   - table
   - user-check
-  - user.svg- briefcase
+  - user
+  - briefcase
   - click
   - file-check
   - file-x
@@ -29,7 +30,8 @@ icons:
   - square
   - tiktok
   - user-minus
-  - youtube.svg- calendar
+  - youtube
+  - calendar
   - clock
   - file-minus
   - file
@@ -44,7 +46,8 @@ icons:
   - star
   - triangle
   - user-plus
-  - zoom-in.svg- camera
+  - zoom-in
+  - camera
   - crop
   - file-plus
   - flag

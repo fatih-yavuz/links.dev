@@ -1,65 +1,65 @@
 icons:
   - book
-  - circle
-  - diamond
-  - file-text
-  - flip-horizontal
-  - globe
-  - home
-  - list
-  - medium
-  - octagon
-  - repeat
-  - skip-back
-  - spotify
-  - table
-  - user-check
-  - user
   - briefcase
-  - click
-  - file-check
-  - file-x
-  - flip-vertical
-  - grid
-  - instagram
-  - lock
-  - menu
-  - pause
-  - rotate
-  - skip-forward
-  - square
-  - tiktok
-  - user-minus
-  - youtube
   - calendar
-  - clock
-  - file-minus
-  - file
-  - folder
-  - heart
-  - link
-  - mail
-  - mug
-  - phone
-  - search
-  - sort-ascending
-  - star
-  - triangle
-  - user-plus
-  - zoom-in
   - camera
+  - circle
+  - click
+  - clock
   - crop
+  - diamond
+  - file-check
+  - file-minus
   - file-plus
+  - file-text
+  - file-x
+  - file
   - flag
+  - flip-horizontal
+  - flip-vertical
+  - folder
   - github
+  - globe
+  - grid
+  - heart
   - hexagon
+  - home
+  - instagram
+  - link
   - linkedin
+  - list
+  - lock
+  - mail
   - map
+  - medium
+  - menu
+  - mug
   - notebook
+  - octagon
+  - pause
+  - phone
   - play
+  - repeat
+  - rotate
+  - search
   - shopping-cart
+  - skip-back
+  - skip-forward
+  - sort-ascending
   - sort-descending
+  - spotify
+  - square
+  - star
   - store
+  - table
+  - tiktok
+  - triangle
   - twitter
+  - user-check
+  - user-minus
+  - user-plus
   - user-x
+  - user
+  - youtube
+  - zoom-in
   - zoom-out

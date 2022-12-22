@@ -469,3 +469,34 @@
     background-repeat: no-repeat;
     background-color: #fff;
 }
+
+.icon {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    pointer-events: none;
+    overflow: hidden;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: currentColor;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    left: 8px;
+    border-radius: 12px;
+    width: 48px;
+    height: 48px;
+}
+
+.hOaBSk {
+    width: 44px;
+    height: 44px;
+}
+

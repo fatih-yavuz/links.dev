@@ -27,7 +27,7 @@ Once you have created your "my-links" repository and opened your pull request, w
 
 ## Stay in touch?
 - Subscribe to the [newsletter](http://eepurl.com/igpQ6j), get notified when new features are added to links.dev
-- Follow [@links4dev](https://twitter.com/linksdev) on Twitter for updates
+- Follow [@links4dev](https://twitter.com/links4dev) on Twitter for updates
 - Join the [Discord](https://discord.gg/gVJPDQq4) server to get help and share your ideas
 - Want to support me for me? You can buy me a coffee [here](https://www.buymeacoffee.com/fthdev), I will publicly thank you on Twitter from [my personal account](https://twitter.com/fthdev) :)
 

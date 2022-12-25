@@ -44,19 +44,19 @@ async function validateRegistry() {
         }
 
         const pageJsonContent = pageJsonResponse.data;
-        const hash = crypto.createHash('sha256').update(pageJsonContent).digest('hex');
-
-        if (hashedContents.has(hash)) {
-            console.error('pageJsonContent has already been processed.');
-            process.exit(1);
-        }
-
-        hashedContents.add(hash);
 
         // Validate the structure of the page.json file
         if (!pageJsonContent || !pageJsonContent.name || !pageJsonContent.description || !pageJsonContent.image_url || !pageJsonContent.links) {
             throw new Error(`Invalid page.json format for user "${username}".`);
         }
+
+        const hash = crypto.createHash('sha256').update(JSON.stringify(pageJsonContent)).digest('hex');
+        if (hashedContents.has(hash)) {
+            console.error('The page.json file for user "' + username + '" is a duplicate ' + pageJsonUrl);
+            process.exit(1);
+        }
+
+        hashedContents.add(hash);
 
 
         // Validate the image_url field

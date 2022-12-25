@@ -3,10 +3,11 @@ const yaml = require('yaml');
 const axios = require('axios');
 const path = require('path');
 
+const crypto = require('crypto');
 
-// TODO: instead of checking each user on eeach PR, we could check only the user that was added/modified
-// TODO: Check each user only once per day via a cron job`
-// TODO: In the cronkjob, if user has any problem with their page, for example, broken link or something, a GitHub bot should open an issue on their my-links repo and warn them
+// Create a set to store the hashes of the pageJsonContent strings
+const hashedContents = new Set();
+
 async function validateRegistry() {
     // Read the registry.yaml file
     const isCI = process.env.CI;
@@ -43,10 +44,19 @@ async function validateRegistry() {
         }
 
         const pageJsonContent = pageJsonResponse.data;
+
         // Validate the structure of the page.json file
         if (!pageJsonContent || !pageJsonContent.name || !pageJsonContent.description || !pageJsonContent.image_url || !pageJsonContent.links) {
             throw new Error(`Invalid page.json format for user "${username}".`);
         }
+
+        const hash = crypto.createHash('sha256').update(JSON.stringify(pageJsonContent)).digest('hex');
+        if (hashedContents.has(hash)) {
+            console.error('The page.json file for user "' + username + '" is a duplicate ' + pageJsonUrl);
+            process.exit(1);
+        }
+
+        hashedContents.add(hash);
 
 
         // Validate the image_url field

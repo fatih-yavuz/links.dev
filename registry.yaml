@@ -91,6 +91,10 @@ users:
     github_username: aydinnecmias
   ka:
     github_username: dotka
+  nihad:
+    github_username: muhammednihad
+  trevin:
+    github_username: tmchow
   z:
     github_username: zarifpour
   xavier:
@@ -99,5 +103,11 @@ users:
     github_username: attithom
   bb:
     github_username: burak-bilgen
+  kalpit:
+    github_username: kalpitshah72
+  sezerweb:
+    github_username: sezerweb
+  keshavashiya:
+    github_username: keshavashiya
   nuh:
     github_username: nuhylmz

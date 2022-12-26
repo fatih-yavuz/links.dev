@@ -49,7 +49,7 @@ Once you have created your "my-links" repository and opened your pull request, w
 - Your username must be unique. If your username is already taken, you will be asked to choose a different one.
 - Your page cannot contain any offensive content.
 - Your page cannot contain any links to illegal content.
-- You cannot register reserved usernames. Here is a list of reserved usernames: [admin, api, blog, contact, dashboard, docs, faq, help, home, index, login, logout, mail, mailto, privacy, register, signup, support, terms, test, cdn, api-auth, themes]
+- You cannot register reserved usernames. These are listed in the [`restricted-usernames.yaml`](restricted-usernames.yaml) file.
 
 ## Thanks
 
@@ -67,7 +67,7 @@ If you like this project and want to support my work, you can do so by starring 
 
 First 1000 users will get early adopters badge on their profile. 
 
-Here is a list of first 23 early adopters:
+Here is a list of first 24 early adopters:
 
 - [Fatih Yavuz](https://links.dev/fatih)
 - [Sila Eryılmaz](https://links.dev/sila)
@@ -92,8 +92,12 @@ Here is a list of first 23 early adopters:
 - [Yunus Bulut](https://links.dev/yunusbulut)
 - [Ömer Ulusal](https://links.dev/omer)
 - [Mehmet Akif Tütüncü](https://links.dev/akif)
+- [Ahmet Can Aydemir](https://links.dev/ahmetcan)
 
 ## Frequently Asked Questions
+#### My PR is merged but my page is online yet
+You should invalidate the registry cache. Normally, it should be done automatically on the CI but sometimes, GitHub's own cache is not invalidated when links.dev's registry cache is invalidated. Click this link to invalidate registry cache. 
+https://links.dev/fatih/?refresh-registry=1
 #### I've updated my-links, but I don't see the update on my page
 You need to clear the cache with hitting your page refresh=1 query param. 
 Example: https://links.dev/fatih?refresh=1

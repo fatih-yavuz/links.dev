@@ -49,7 +49,7 @@ Once you have created your "my-links" repository and opened your pull request, w
 - Your username must be unique. If your username is already taken, you will be asked to choose a different one.
 - Your page cannot contain any offensive content.
 - Your page cannot contain any links to illegal content.
-- You cannot register reserved usernames. Here is a list of reserved usernames: [admin, api, blog, contact, dashboard, docs, faq, help, home, index, login, logout, mail, mailto, privacy, register, signup, support, terms, test, cdn, api-auth, themes]
+- You cannot register reserved usernames. These are listed in the [`restricted-usernames.yaml`](restricted-usernames.yaml) file.
 
 ## Thanks
 

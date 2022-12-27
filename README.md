@@ -60,8 +60,7 @@ The minimal version `page.json` file may looks like this:
   "links": [
     {
       "title": "Link title",
-      "url": "link_url",
-      "icon": "icon_name"
+      "url": "link_url"
     }
   ]
 }

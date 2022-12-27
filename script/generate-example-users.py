@@ -10,7 +10,6 @@ usernames = [
     'ali',
     'ab',
     'alfreddagenais',
-    'atticus',
     'birkan',
     'codingwithdidem',
     'fatih',

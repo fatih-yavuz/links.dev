@@ -7,9 +7,9 @@ users = [
   },
   {
     "name": "Ali Yılmaz",
-    "username": "a",
+    "username": "ali",
     "description": "Software Engineer @Facebook, London",
-    "image": "https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/example-pages/img/a.jpeg"
+    "image": "https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/example-pages/img/ali.jpeg"
   },
   {
     "name": "Abhishek Yadav",
@@ -22,12 +22,6 @@ users = [
     "username": "alfreddagenais",
     "description": "Full Stack Developer",
     "image": "https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/example-pages/img/alfreddagenais.jpeg"
-  },
-  {
-    "name": "Atticus",
-    "username": "atticus",
-    "description": "Doctor and Developer",
-    "image": "https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/example-pages/img/atticus.jpeg"
   },
   {
     "name": "Birkan Atıcı",
@@ -44,7 +38,7 @@ users = [
   {
     "name": "Fatih Yavuz",
     "username": "fatih",
-    "description": "Maker @links.dev & Software Engineer @Spotify",
+    "description": "Maker @links.dev",
     "image": "https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/example-pages/img/fatih.jpeg"
   },
   {

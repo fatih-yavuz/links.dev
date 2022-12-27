@@ -2,7 +2,7 @@ users = [{
         "name": "Fatih Yavuz",
         "username": "fatih",
         "description": "Software Engineer @Spotify",
-        "image": "https://pbs.twimg.com/profile_images/1593630240961662979/hDHYl9MP_400x400.jpg"
+        "image": "https://pbs.twimg.com/profile_images/1607095041788416006/tPJYlPgw_400x400.jpg"
     },
     {
         "name": "Sıla Eryılmaz",

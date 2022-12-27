@@ -99,6 +99,12 @@ users = [{
         "username": "ulusalomer",
         "description": "Unemployed",
         "image": "https://pbs.twimg.com/profile_images/1065732965773144064/S37yanGM_400x400.jpg"
+    },
+    {
+        "name": "Daniel Zarifpour",
+        "username": "z",
+        "description": "Software Engineer",
+        "image": "https://avatars.githubusercontent.com/u/16494335?v=4"
     }
 ];
 

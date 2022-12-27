@@ -42,12 +42,6 @@ users = [
     "image": "https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/example-pages/img/fatih.jpeg"
   },
   {
-    "name": "Rob Webb",
-    "username": "robbwebbb",
-    "description": "Product @Spotify",
-    "image": "https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/example-pages/img/robbwebbb.jpeg"
-  },
-  {
     "name": "Sezer AKBULUT",
     "username": "sezerweb",
     "description": "Software Developer",

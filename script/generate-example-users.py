@@ -13,7 +13,6 @@ usernames = [
     'birkan',
     'codingwithdidem',
     'fatih',
-    'robbwebbb',
     'sezerweb',
     'sila',
     'z'

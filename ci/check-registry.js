@@ -18,10 +18,21 @@ async function validateRegistry() {
     const restrictedUsernames = yaml.parse(restrictedUsernamesFileContent).restricted_usernames;
 
     const registry = yaml.parse(registryFileContent);
+
     // Validate the structure of the registry
     if (!registry || !registry.users) {
         throw new Error('Invalid registry format. The "users" key is missing.');
     }
+
+    // Verify that each github username has only one prefix/domain 
+    const ghUsernames = Object.values(registry.users).map(user => user.github_username);
+    const duplicateGhUsernames = ghUsernames.filter((ghUsername, index) => ghUsernames.indexOf(ghUsername) != index)
+
+    if (duplicateGhUsernames.length > 0) {
+        console.log(duplicateGhUsernames)
+        throw new Error('There are duplicate github usernames in the array');
+    }
+
     // Validate each user
     for (const username in registry.users) {
         const user = registry.users[username];

@@ -21,15 +21,7 @@ To register for links.dev, you need to do two things:
   2. [Optional] custom.css, which allows you to customize the look of your page.
 
 That's it!
-
-### What's next?
 Once you have created your "my-links" repository and opened your pull request, wait for it to be reviewed and approved. Once it is merged to the master branch, your page will be visible at: https://links.dev/username
-
-## Stay in touch?
-- Subscribe to the [newsletter](http://eepurl.com/igpQ6j), get notified when new features are added to links.dev
-- Follow [@links4dev](https://twitter.com/links4dev) on Twitter for updates
-- Join the [Discord](https://discord.gg/gVJPDQq4) server to get help and share your ideas
-- Want to support me for me? You can buy me a coffee [here](https://www.buymeacoffee.com/fthdev), I will publicly thank you on Twitter from [my personal account](https://twitter.com/fthdev) :)
 
 ## Tips
 
@@ -72,49 +64,19 @@ The minimal version `page.json` file may looks like this:
 - Your page cannot contain any offensive content.
 - Your page cannot contain any links to illegal content.
 - You cannot register reserved usernames. These are listed in the [`restricted-usernames.yaml`](restricted-usernames.yaml) file.
+- You cannot register multiple usernames.
 
-## Thanks
+## Support links.dev
+If you like this project and want to support it, you can do so by starring this repo and buying a coffee. The money will be used for domain registry fees, server costs, and monitoring tools costs. Any support is highly appreciated. Thank you! 
 
-Thank you for using my service! I hope you have a great time creating your own page and sharing it with others. Let me know if you have any questions or need any assistance along the way.
-
-Once you have your page set up, you can share the link with your friends and colleagues so they can see what you've created.
-
-## Support My Work
-If you like this project and want to support my work, you can do so by starring this repo or buying me a coffee. Thank you for your support!
-
-[![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/fthdev)
+[![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](http://bit.ly/3G4193Q)
 
 
-## Early Adopters
+## Stay in touch?
+- Subscribe to the [newsletter](http://eepurl.com/igpQ6j), get notified when new features are added to links.dev
+- Follow [@links4dev](https://twitter.com/links4dev) on Twitter for updates
+- Join the [Discord](https://discord.gg/gVJPDQq4) server to get help and share your ideas
 
-First 1000 users will get early adopters badge on their profile. 
-
-Here is a list of first 24 early adopters:
-
-- [Fatih Yavuz](https://links.dev/fatih)
-- [Sila Eryılmaz](https://links.dev/sila)
-- [Ali Göktaş](https://links.dev/a)
-- [Birkan Atıcı](https://links.dev/birkan)
-- [Ali Yılmaz](https://links.dev/ali)
-- [Ufuk Kodaman](https://links.dev/kodman)
-- [Sezer İltekin](https://links.dev/iltekin)
-- [Rıza Sabuncu](https://links.dev/riza)
-- [Ahmet Buğra Çakıcı](https://links.dev/ahmet)
-- [Oğuz Albayrak](https://links.dev/o)
-- [Erhan Büte](https://links.dev/erhan)
-- [Onur Şuyalçınkaya](https://links.dev/onur)
-- [Zeynep Nur Aktas](https://links.dev/zeynep)
-- [Didem Küçükkaraaslan](https://links.dev/codingwithdidem)
-- [Tolga Gezginiş](https://links.dev/t)
-- [Furkan Kapukaya](https://links.dev/furkan)
-- [Melih Sivri](https://links.dev/melih)
-- [Joshua](https://links.dev/j)
-- [Alperen Çetin](https://links.dev/alperen)
-- [Can Çitoğlu](https://links.dev/can)
-- [Yunus Bulut](https://links.dev/yunusbulut)
-- [Ömer Ulusal](https://links.dev/omer)
-- [Mehmet Akif Tütüncü](https://links.dev/akif)
-- [Ahmet Can Aydemir](https://links.dev/ahmetcan)
 
 ## Frequently Asked Questions
 #### My PR is merged but my page is online yet
@@ -124,9 +86,10 @@ https://links.dev/fatih/?refresh-registry=1
 You need to clear the cache with hitting your page refresh=1 query param. 
 Example: https://links.dev/fatih?refresh=1
 If you still don't see the update, it might be because you recently committed the changes to your repo. It takes a bit time for GitHub to invalidate raw content caches. Try hitting your page with refresh=1 5 minutes later. 
+
+#### Everything seems correct but there is a problem
+- Check your my-links repo's branch. Make sure that it has a branch called "main" and it has relevant files.
  
-#### Can I add myself to Early Adopters in README.md? 
-Not anymore. Because it causes unnecessary merge conflicts.
 
 #### Can I add myself to example-pages.js? 
 It depends. If you have a different theme than the default one, yes you can. Please keep in mind that, you have to have a known image hosting provider url or Twitter, LinkedIn profile picture url. Because its content is displayed on the home page, and it is susceptible to XSS. That's why I cannot accept your pull request if you are using a custom image url.  

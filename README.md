@@ -43,6 +43,29 @@ Once you have created your "my-links" repository and opened your pull request, w
 - If you are a designer, feel free to create a pull request to add more icons to the list.
 
 
+### Required page.json sections
+To display your website, your `page.json` must have at least these sections:
+- Name (`name`)
+- Description (`description`)
+- Your image URL (`image_url`)
+- Collection of links (`links`)
+
+The minimal version `page.json` file may looks like this:
+
+```
+{
+  "name": "Your name",
+  "description": "Your description",
+  "image_url": "url_to_your_image",
+  "links": [
+    {
+      "title": "Link title",
+      "url": "link_url",
+      "icon": "icon_name"
+    }
+  ]
+}
+```
 
 ## Restrictions
 

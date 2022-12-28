@@ -2,6 +2,9 @@ on:
   push:
     paths:
       - ci/**
+  pull_request:
+    paths:
+      - ci/**
 
 jobs:
   tests:

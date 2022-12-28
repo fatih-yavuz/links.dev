@@ -8,6 +8,7 @@
     "yaml": "^2.1.3"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-ci": "jest --testPathPattern=ci"
   }
 }

@@ -5,6 +5,7 @@ const path = require('path');
 
 const crypto = require('crypto');
 
+const checkDuplicateGithubUserNames = require('./registry/duplicate-check-ghusername')
 // Create a set to store the hashes of the pageJsonContent strings
 const hashedContents = new Set();
 
@@ -24,13 +25,7 @@ async function validateRegistry() {
     }
 
     // Verify that each github username has only one prefix/domain 
-    const ghUsernames = Object.values(registry.users).map(user => user.github_username);
-    const duplicatedGhUsernames = ghUsernames.filter((ghUsername, index) => ghUsernames.indexOf(ghUsername) != index)
-
-    if (duplicatedGhUsernames.length > 0) {
-        console.log(duplicatedGhUsernames)
-        throw new Error('There are duplicated github usernames in the array');
-    }
+    checkDuplicateGithubUserNames(registry.users)
 
     // Validate each user
     for (const username in registry.users) {

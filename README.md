@@ -12,7 +12,7 @@ Are you tired of having to constantly update your CV, social media profiles, and
 - It is completely free!
 
 ## How to sign up
-You can find a video tutorial (here)[https://www.youtube.com/watch?v=50oHDXGuqNQ&t=325s]
+You can find a video tutorial [here](https://www.youtube.com/watch?v=50oHDXGuqNQ&t=325s)
 
 ----
 

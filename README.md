@@ -75,7 +75,7 @@ If you like this project and want to support it, you can do so by starring this 
 ## Stay in touch?
 - Subscribe to the [newsletter](http://eepurl.com/igpQ6j), get notified when new features are added to links.dev
 - Follow [@links4dev](https://twitter.com/links4dev) on Twitter for updates
-- Join the [Discord](https://discord.gg/gVJPDQq4) server to get help and share your ideas
+- Join the [Discord](https://discord.gg/KskRunFWEc) server to get help and share your ideas
 
 
 ## Frequently Asked Questions

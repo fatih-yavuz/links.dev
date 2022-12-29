@@ -5,6 +5,7 @@ const path = require('path');
 
 const crypto = require('crypto');
 
+const checkDuplicateGithubUserNames = require('./registry/duplicate-check-ghusername')
 // Create a set to store the hashes of the pageJsonContent strings
 const hashedContents = new Set();
 
@@ -22,6 +23,10 @@ async function validateRegistry() {
     if (!registry || !registry.users) {
         throw new Error('Invalid registry format. The "users" key is missing.');
     }
+
+    // Verify that each github username has only one prefix/domain 
+    checkDuplicateGithubUserNames(registry.users)
+
     // Validate each user
     for (const username in registry.users) {
         const user = registry.users[username];

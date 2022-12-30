@@ -32,26 +32,25 @@ async function validateRegistry() {
 
 
     // Get only new users
-    const productionRegistry = await downloadRegistry();
-
-    const registryUsers = Object.entries(registry.users);
-  
-    const newUsers = Object.fromEntries(
-        registryUsers.filter(function([key]) { 
-            console.log(key);
-            console.log(productionRegistry.users.hasOwnProperty(key));
-            return !productionRegistry.users.hasOwnProperty(key);
-          })
-    );
-
     if(shouldCheckOnlyNewUsers) {
         console.log("shouldCheckOnlyNewUsers flag enabled. Script will check only new users.")
+
+        const productionRegistry = await downloadRegistry();
+
+        const registryUsers = Object.entries(registry.users);
+      
+        const newUsers = Object.fromEntries(
+            registryUsers.filter(function([key]) { 
+                return !productionRegistry.users.hasOwnProperty(key);
+              })
+        );
+        
         registry.users = newUsers;
     }
  
 
     // Validate each user
-    console.log("Validating " + registry.users.length + " users..")
+    console.log("Validating " + Object.keys(registry.users).length + " users..")
     for (const username in registry.users) {
         const user = registry.users[username];
         if (!user.github_username) {

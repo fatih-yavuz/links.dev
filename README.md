@@ -5,7 +5,7 @@ Are you tired of having to constantly update your CV, social media profiles, and
 ## Quick Links
 - [Backend](https://gitlab.com/deskriptiff/links.dev-backend)
 - [Discord](https://discord.gg/4Z8QZ5Y)
-- [Twitter](https://twitter.com/links4dev) on Twitter for updates
+- [Twitter](https://twitter.com/links4dev)
 
 ## Benefits
 

@@ -7,7 +7,6 @@ const yaml = require('yaml');
 const axios = require('axios');
 const path = require('path');
 const crypto = require('crypto');
-const request = require('request');
 
 const checkDuplicateGithubUserNames = require('./registry/duplicate-check-ghusername')
 // Create a set to store the hashes of the pageJsonContent strings

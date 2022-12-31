@@ -4,12 +4,14 @@ on:
       - main
 
 jobs:
-  validate_registry:
+  validations:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: npm install
+      - name: Validate Restricted Usernames
+        run: node ci/check-restricted-usernames.js
       - name: Validate Registry
         run: node ci/check-registry.js
       - name: Validate Early Adopters

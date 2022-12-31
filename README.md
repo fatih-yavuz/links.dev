@@ -2,6 +2,11 @@
 
 Are you tired of having to constantly update your CV, social media profiles, and other online platforms with your latest links and information? With links.dev, you can simplify your online presence and make it easier for potential employers, clients, and followers to find and access all your important links in one place.
 
+## Quick Links
+- [Backend](https://gitlab.com/deskriptiff/links.dev-backend)
+- [Discord](https://discord.gg/4Z8QZ5Y)
+- [Twitter](https://twitter.com/links4dev)
+
 ## Benefits
 
 - Add all your links to one simple page
@@ -12,18 +17,21 @@ Are you tired of having to constantly update your CV, social media profiles, and
 - It is completely free!
 
 ## How to sign up
+You can find a video tutorial [here](https://www.youtube.com/watch?v=50oHDXGuqNQ&t=325s)
+
+----
 
 To register for links.dev, you need to do two things:
 
-- Create **a pull request** to add yourself to the registry.yaml file.
+- Create **a pull request** to add yourself to the registry.yaml file. 
 - Create **a new public repository** called "my-links". (You can also fork [this](https://github.com/fatih-yavuz/my-links)) This repository should contain two files:
   1. page.json, which contains the content of your page.
   2. [Optional] custom.css, which allows you to customize the look of your page.
 
 That's it!
-
-### What's next?
 Once you have created your "my-links" repository and opened your pull request, wait for it to be reviewed and approved. Once it is merged to the master branch, your page will be visible at: https://links.dev/username
+
+## Tips
 
 ### Profile Picture Tips
 - Use and image url which has 1:1 aspect ratio for your profile picture. This will make sure that your profile picture is displayed correctly.
@@ -34,67 +42,62 @@ Once you have created your "my-links" repository and opened your pull request, w
 - You can use any of the icons listed [here](https://github.com/fatih-yavuz/links.dev/tree/main/user-page/icons)
 - If you are a designer, feel free to create a pull request to add more icons to the list.
 
-## Nice to haves
-- Add a link to your page in your social media bios
-- Add your page to your CV
-- Add your page to your email signature
+
+### Required page.json sections
+To display your website, your `page.json` must have at least these sections:
+- Name (`name`)
+- Description (`description`)
+- Your image URL (`image_url`)
+- Collection of links (`links`)
+
+The minimal version `page.json` file may looks like this:
+
+```
+{
+  "name": "Your name",
+  "description": "Your description",
+  "image_url": "url_to_your_image",
+  "links": [
+    {
+      "title": "Link title",
+      "url": "link_url"
+    }
+  ]
+}
+```
 
 ## Restrictions
 
 - Your username must be unique. If your username is already taken, you will be asked to choose a different one.
 - Your page cannot contain any offensive content.
 - Your page cannot contain any links to illegal content.
-- You cannot register reserved usernames. Here is a list of reserved usernames: [admin, api, blog, contact, dashboard, docs, faq, help, home, index, login, logout, mail, mailto, privacy, register, signup, support, terms, test, cdn, api-auth, themes]
+- You cannot register reserved usernames. These are listed in the [`restricted-usernames.yaml`](restricted-usernames.yaml) file.
+- You cannot register multiple usernames.
 
-## Thanks
+## Support links.dev
+If you like this project and want to support it, you can do so by starring this repo and buying a coffee. The money will be used for domain registry fees, server costs, and monitoring tools costs. Any support is highly appreciated. Thank you! 
 
-Thank you for using my service! I hope you have a great time creating your own page and sharing it with others. Let me know if you have any questions or need any assistance along the way.
-
-Once you have your page set up, you can share the link with your friends and colleagues so they can see what you've created.
-
-## Support My Work
-If you like this project and want to support my work, you can do so by starring this repo or buying me a coffee. Thank you for your support!
-
-[![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/fthdev)
+[![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](http://bit.ly/3G4193Q)
 
 
-## Early Adopters
+## Stay in touch?
+- Subscribe to the [newsletter](http://eepurl.com/igpQ6j), get notified when new features are added to links.dev
+- Follow [@links4dev](https://twitter.com/links4dev) on Twitter for updates
+- Join the [Discord](https://discord.gg/KskRunFWEc) server to get help and share your ideas
 
-First 1000 users will get early adopters badge on their profile. 
-
-Here is a list of first 22 early adopters:
-
-- [Fatih Yavuz](https://links.dev/fatih)
-- [Sila Eryılmaz](https://links.dev/sila)
-- [Ali Göktaş](https://links.dev/a)
-- [Birkan Atıcı](https://links.dev/birkan)
-- [Ali Yılmaz](https://links.dev/ali)
-- [Ufuk Kodaman](https://links.dev/kodman)
-- [Sezer İltekin](https://links.dev/iltekin)
-- [Rıza Sabuncu](https://links.dev/riza)
-- [Ahmet Buğra Çakıcı](https://links.dev/ahmet)
-- [Oğuz Albayrak](https://links.dev/o)
-- [Erhan Büte](https://links.dev/erhan)
-- [Onur Şuyalçınkaya](https://links.dev/onur)
-- [Zeynep Nur Aktas](https://links.dev/zeynep)
-- [Didem Küçükkaraaslan](https://links.dev/codingwithdidem)
-- [Tolga Gezginiş](https://links.dev/t)
-- [Furkan Kapukaya](https://links.dev/furkan)
-- [Melih Sivri](https://links.dev/melih)
-- [Joshua](https://links.dev/j)
-- [Alperen Çetin](https://links.dev/alperen)
-- [Can Çitoğlu](https://links.dev/can)
-- [Yunus Bulut](https://links.dev/yunusbulut)
-- [Ömer Ulusal](https://links.dev/omer)
 
 ## Frequently Asked Questions
+#### My PR is merged but my page is online yet
+You should invalidate the registry cache. Normally, it should be done automatically on the CI but sometimes, GitHub's own cache is not invalidated when links.dev's registry cache is invalidated. Click this link to invalidate registry cache. 
+https://links.dev/fatih/?refresh-registry=1
 #### I've updated my-links, but I don't see the update on my page
 You need to clear the cache with hitting your page refresh=1 query param. 
 Example: https://links.dev/fatih?refresh=1
 If you still don't see the update, it might be because you recently committed the changes to your repo. It takes a bit time for GitHub to invalidate raw content caches. Try hitting your page with refresh=1 5 minutes later. 
+
+#### Everything seems correct but there is a problem
+- Check your my-links repo's branch. Make sure that it has a branch called "main" and it has relevant files.
  
-#### Can I add myself to Early Adopters in README.md? 
-Not anymore. Because it causes unnecessary merge conflicts.
 
 #### Can I add myself to example-pages.js? 
 It depends. If you have a different theme than the default one, yes you can. Please keep in mind that, you have to have a known image hosting provider url or Twitter, LinkedIn profile picture url. Because its content is displayed on the home page, and it is susceptible to XSS. That's why I cannot accept your pull request if you are using a custom image url.  

@@ -12,3 +12,11 @@ jobs:
       - uses: actions/checkout@v2
       - name: Invalidate Cache
         run: bash invalidate-cache.sh
+      - name: Install dependencies
+        run: npm install
+      - name: Validate Restricted Usernames
+        run: node ci/check-restricted-usernames.js
+      - name: Validate Registry
+        run: node ci/check-registry.js
+      - name: Validate Example Pages
+        run: node ci/check-example-pages.js

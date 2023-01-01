@@ -1,8 +1,11 @@
+const productionRegistryUri = 'https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/registry.yaml';
+const shouldCheckOnlyNewUsers = true;
+
 const fs = require('fs');
+const request = require('request');
 const yaml = require('yaml');
 const axios = require('axios');
 const path = require('path');
-
 const crypto = require('crypto');
 
 const checkDuplicateGithubUserNames = require('./registry/duplicate-check-ghusername')
@@ -27,7 +30,27 @@ async function validateRegistry() {
     // Verify that each github username has only one prefix/domain 
     checkDuplicateGithubUserNames(registry.users)
 
+
+    // Get only new users
+    if(shouldCheckOnlyNewUsers) {
+        console.log("shouldCheckOnlyNewUsers flag enabled. Script will check only new users.")
+
+        const productionRegistry = await downloadRegistry();
+
+        const registryUsers = Object.entries(registry.users);
+      
+        const newUsers = Object.fromEntries(
+            registryUsers.filter(function([key]) { 
+                return !productionRegistry.users.hasOwnProperty(key);
+              })
+        );
+        
+        registry.users = newUsers;
+    }
+ 
+
     // Validate each user
+    console.log("Validating " + Object.keys(registry.users).length + " users..")
     for (const username in registry.users) {
         const user = registry.users[username];
         if (!user.github_username) {
@@ -78,6 +101,19 @@ async function validateRegistry() {
     }
     console.log('Registry validation successful.');
 }
+
+
+async function downloadRegistry() {
+    return new Promise((resolve, reject) => {
+      request.get(productionRegistryUri, function(error, response, body) {
+        if (!error && response.statusCode == 200) {
+          var productionRegistryFileContent = body;
+          resolve(yaml.parse(productionRegistryFileContent));
+        }
+        reject('Invalid status code <' + response.statusCode + '>');
+      });
+    });
+  }
 
 async function main() {
     try {

@@ -1,4 +1,4 @@
-const checkDuplicateGithubUserNames = require("./duplicate-check-ghusername");
+const checkDuplicateGithubUserNames = require("../util/duplicate-check-gh-username");
 
 
 

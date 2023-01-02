@@ -1,0 +1,56 @@
+name: 🧩 Feature Request
+
+description: Have a new idea, feature, or breaking change? Please describe everything here!
+
+title: '🧩 [FEATURE]: <description>'
+
+body:
+
+  - type: textarea
+
+    id: description
+
+    attributes:
+
+      label: Description
+
+      description: A brief description of the enhancement or breaking change you propose, also include what you tried and have worked.
+
+    validations:
+
+      required: true
+
+  - type: textarea
+
+    id: screenshots
+
+    attributes:
+
+      label: Screenshots
+
+      description: Please add screenshots (if applicable)
+
+    validations:
+
+      required: false
+
+  - type: textarea
+
+    id: extrainfo
+
+    attributes:
+
+      label: Additional information
+
+      description: Is there anything else we should know about your idea?
+
+    validations:
+
+      required: false
+
+  - type: markdown
+
+    attributes:
+
+      value: 
+        > Feel free to join the links.dev community [here](https://discord.gg/4Z8QZ5Y)

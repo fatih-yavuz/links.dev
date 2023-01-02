@@ -15,7 +15,6 @@ What types of changes does your code introduce to links.dev?
 >  _Mark the boxes with a `x` that are related to the PR._
 > If you're unsure about any of them, don't hesitate to ask. 
 
-- [ ] CI still works with my changes
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] I have added necessary documentation (if appropriate)
 

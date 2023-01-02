@@ -198,6 +198,10 @@
   -webkit-mask-image: url('https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/search.svg');
   mask-image: url('https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/search.svg');
 }
+.icon-share {
+  -webkit-mask-image: url('https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/share.svg');
+  mask-image: url('https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/share.svg');
+}
 .icon-shopping-cart {
   -webkit-mask-image: url('https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/shopping-cart.svg');
   mask-image: url('https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/shopping-cart.svg');

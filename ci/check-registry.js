@@ -26,7 +26,8 @@ async function validateRegistry() {
     const registry = getRegistry();
 
     await checkDuplicateGithubUserNames(registry.users)
-    registry.users = await getNewUsers(registry.users, await downloadRegistry(productionRegistryUri));
+    await addFatihToTheRegistryForCheckingPageDuplication();
+
 
 
     console.log("Validating " + Object.keys(registry.users).length + " users..")
@@ -58,6 +59,22 @@ async function validateRegistry() {
 
     }
     console.log('Registry validation successful.');
+
+    async function addFatihToTheRegistryForCheckingPageDuplication() {
+        registry.users = await getNewUsers(registry.users, await downloadRegistry(productionRegistryUri));
+        users = {
+            'fatih': {
+                'github_username': 'fatih-yavuz'
+            }
+        };
+
+        for (const username in registry.users) {
+            const user = registry.users[username];
+            users[user.github_username] = user;
+        }
+
+        registry.users = users;
+    }
 }
 
 

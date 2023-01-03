@@ -5,6 +5,10 @@
     display: flex;
 }
 
+.ld-flex-end {
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
 
 .ld-flex-center {
     -webkit-align-items: center;
@@ -69,6 +73,12 @@
     position: relative;
 }
 
+.ld-icon-button-base {
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: white!important;
+}
+
 .ld-button-base {
     margin: 0;
     border: none;
@@ -79,7 +89,6 @@
     cursor: pointer;
     display: block;
     background: none;
-    type: button;
     -webkit-text-decoration: none;
     text-decoration: none;
     display: -webkit-box;
@@ -96,13 +105,15 @@
     justify-content: center;
     height: auto;
     position: relative;
-    padding: 16px 20px;
-    width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     box-sizing: border-box;
-    vertical-align: middle;
+}
+
+.ld-button-full {
+    width: 100%;
+    padding: 16px 20px;
 }
 
 .ld-button-base:focus {
@@ -222,11 +233,20 @@
     margin-top: 4px;
 }
 
-.ld-icon {
+.ld-icon,
+.ld-icon-sm {
     left: 4px;
-    border-radius: 12px;
+}
+
+.ld-icon {
     width: 48px;
     height: 48px;
+    border-radius: 12px;
+}
+
+.ld-icon-sm {
+    width: 24px;
+    height: 24px;
 }
 
 .ld-description-container > h2 {
@@ -240,102 +260,102 @@
 
 
 @-webkit-keyframes spin {
-    from {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(359deg);
-        -ms-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
+from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+to {
+    -webkit-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+}
 }
 
 
 @keyframes spin {
-    from {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(359deg);
-        -ms-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
+from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+to {
+    -webkit-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+}
 }
 
 @-webkit-keyframes topwave {
-    from {
-        -webkit-mask-position: 0 top;
-        mask-position: 0 top;
-    }
-    to {
-        -webkit-mask-position: 680px top;
-        mask-position: 680px top;
-    }
+from {
+    -webkit-mask-position: 0 top;
+    mask-position: 0 top;
+}
+to {
+    -webkit-mask-position: 680px top;
+    mask-position: 680px top;
+}
 }
 
 
 @keyframes topwave {
-    from {
-        -webkit-mask-position: 0 top;
-        mask-position: 0 top;
-    }
-    to {
-        -webkit-mask-position: 680px top;
-        mask-position: 680px top;
-    }
+from {
+    -webkit-mask-position: 0 top;
+    mask-position: 0 top;
+}
+to {
+    -webkit-mask-position: 680px top;
+    mask-position: 680px top;
+}
 }
 
 
 @-webkit-keyframes bottomwave {
-    from {
-        -webkit-mask-position: 0 top;
-        mask-position: 0 top;
-    }
-    to {
-        -webkit-mask-position: -680px top;
-        mask-position: -680px top;
-    }
+from {
+    -webkit-mask-position: 0 top;
+    mask-position: 0 top;
+}
+to {
+    -webkit-mask-position: -680px top;
+    mask-position: -680px top;
+}
 }
 
 
 @keyframes bottomwave {
-    from {
-        -webkit-mask-position: 0 top;
-        mask-position: 0 top;
-    }
-    to {
-        -webkit-mask-position: -680px top;
-        mask-position: -680px top;
-    }
+from {
+    -webkit-mask-position: 0 top;
+    mask-position: 0 top;
+}
+to {
+    -webkit-mask-position: -680px top;
+    mask-position: -680px top;
+}
 }
 
 
 
 @-webkit-keyframes fadeBoxShadowInAndOut {
-    0%,
-    100% {
-        box-shadow: inherit;
-    }
-    15%,
-    85% {
-        box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
-    }
+0%,
+100% {
+    box-shadow: inherit;
+}
+15%,
+85% {
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
+}
 }
 
 
 @keyframes fadeBoxShadowInAndOut {
-    0%,
-    100% {
-        box-shadow: inherit;
-    }
-    15%,
-    85% {
-        box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
-    }
+0%,
+100% {
+    box-shadow: inherit;
+}
+15%,
+85% {
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
+}
 }
 
 
@@ -363,11 +383,11 @@
     overflow: hidden;
     margin-bottom: 16px;
     -webkit-transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99),
-    -webkit-transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+        -webkit-transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
     -webkit-transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99),
-    transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+        transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
     transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99),
-    transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+        transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
     border: none;
     background-color: #2665d6;
     color: #fff;
@@ -394,11 +414,11 @@
     background: none;
     color: inherit;
     -webkit-transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), -webkit-transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99),
-    background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+        background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
     -webkit-transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99),
-    background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+        background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
     transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99),
-    background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+        background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
     padding-left: 44px;
     padding-right: 44px;
     padding-left: 66px;
@@ -419,12 +439,19 @@
     background-color: #fff;
 }
 
-.icon {
+.icon-absolute {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    left: 8px;
+    border-radius: 12px;
+    width: 48px;
+    height: 48px;
+}
+
+.icon {
     pointer-events: none;
     overflow: hidden;
     -webkit-box-pack: center;
@@ -438,8 +465,4 @@
     background-color: currentColor;
     -webkit-mask-size: 100%;
     mask-size: 100%;
-    left: 8px;
-    border-radius: 12px;
-    width: 48px;
-    height: 48px;
 }

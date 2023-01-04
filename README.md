@@ -28,7 +28,7 @@ To register for links.dev, you need to do two things:
 - Create **a pull request** to add yourself to the registry.yaml file. 
 - Create **a new public repository** called "my-links". (You can also fork [this](https://github.com/fatih-yavuz/my-links)) This repository should contain two files:
   1. `page.json`, which contains the content of your page.
-  2. [Optional] custom.css, which allows you to customize the look of your page.
+  2. [Optional] `custom.css`, which allows you to customize the look of your page.
 
 That's it!
 Once you have created your "my-links" repository and opened your pull request, wait for it to be reviewed and approved. Once it is merged to the master branch, your page will be visible at: https://links.dev/username

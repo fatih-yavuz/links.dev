@@ -1,15 +1,36 @@
 icons:
   - apple
+  - bank-note-01
+  - bank-note-02
+  - bank
   - book
+  - brackets-check
+  - brackets-ellipses
   - briefcase
   - calendar
   - camera
+  - check-verified-01
+  - check-verified-02
+  - check-verified-03
   - circle
   - click
   - clock
+  - code-02
+  - code-browser
+  - codepen
+  - coins-hand
+  - cpu-chip-02
   - crop
+  - data
+  - dataflow-01
+  - dataflow-03
   - diamond
   - discord
+  - download-04
+  - download-cloud-01
+  - download-cloud-02
+  - edit-02
+  - edit-04
   - facebook
   - file-check
   - file-minus
@@ -17,24 +38,40 @@ icons:
   - file-text
   - file-x
   - file
+  - flag-03
+  - flag-04
   - flag
   - flip-horizontal
   - flip-vertical
   - folder
+  - git-branch-01
+  - git-branch-02
   - github
   - gitlab
+  - globe-01
+  - globe-02
   - globe
   - grid
   - heart
   - hexagon
   - home
   - instagram
+  - lightbulb-02
+  - link-01
+  - link-02
+  - link-03
+  - link-04
+  - link-05
+  - link-broken-01
   - link
   - linkedin
   - list
   - lock
   - mail
   - map
+  - marker-pin-03
+  - marker-pin-04
+  - marker-pin-05
   - medium
   - menu
   - mug
@@ -44,11 +81,19 @@ icons:
   - paypal
   - phone
   - pinterest
+  - plane
   - play
+  - puzzle-piece-02
+  - qr-code-01
+  - recording-02
   - reddit
   - repeat
   - rotate
   - search
+  - share-01
+  - share-02
+  - share-03
+  - share-04
   - share
   - shopping-cart
   - skip-back
@@ -63,10 +108,15 @@ icons:
   - star
   - store
   - table
+  - terminal-circle
+  - terminal-square
   - tiktok
   - triangle
+  - trophy-01
+  - trophy-02
   - twitch
   - twitter
+  - user-check-02
   - user-check
   - user-minus
   - user-plus

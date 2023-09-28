@@ -434,6 +434,10 @@
   -webkit-mask-image: url('https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/table.svg');
   mask-image: url('https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/table.svg');
 }
+.icon-telegram {
+  -webkit-mask-image: url('https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/telegram.svg');
+  mask-image: url('https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/telegram.svg');
+}
 .icon-terminal-circle {
   -webkit-mask-image: url('https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/terminal-circle.svg');
   mask-image: url('https://raw.githubusercontent.com/fatih-yavuz/links.dev/main/user-page/icons/terminal-circle.svg');

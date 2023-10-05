@@ -1,8 +1,6 @@
 users:
   fatih:
     github_username: fatih-yavuz
-  haeydra:
-    github_username: Haeydra
   sila:
     github_username: SilaEryilmaz
   rk:
@@ -281,3 +279,5 @@ users:
     github_username: ilmpk
   wilgory:
     github_username: wilgory
+  haeydra:
+    github_username: Haeydra
